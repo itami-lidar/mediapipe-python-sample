@@ -63,7 +63,7 @@ def main():
     plot_world_landmark = args.plot_world_landmark
 
     # カメラ準備 ###############################################################
-    cap = cv.VideoCapture(cap_device)
+    cap = cv.VideoCapture("senpai.mp4")
     cap.set(cv.CAP_PROP_FRAME_WIDTH, cap_width)
     cap.set(cv.CAP_PROP_FRAME_HEIGHT, cap_height)
 
@@ -83,7 +83,7 @@ def main():
     # World座標プロット ########################################################
     if plot_world_landmark:
         import matplotlib.pyplot as plt
-        
+
         fig = plt.figure()
         ax = fig.add_subplot(111, projection="3d")
         fig.subplots_adjust(left=0.0, right=1, bottom=0, top=1)
@@ -478,7 +478,7 @@ def plot_world_landmarks(
         waist_x.append(point[0])
         waist_y.append(point[2])
         waist_z.append(point[1] * (-1))
-            
+
     ax.cla()
     ax.set_xlim3d(-1, 1)
     ax.set_ylim3d(-1, 1)
@@ -491,7 +491,7 @@ def plot_world_landmarks(
     ax.plot(left_body_side_x, left_body_side_y, left_body_side_z)
     ax.plot(shoulder_x, shoulder_y, shoulder_z)
     ax.plot(waist_x, waist_y, waist_z)
-    
+
     plt.pause(.001)
 
     return

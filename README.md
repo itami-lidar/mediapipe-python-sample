@@ -1,4 +1,12 @@
 # mediapipe-python-sample
+
+**ルートディレクトリに`senpai.mp4`を置くことで、その動画内の人の３次元姿勢推定できます**
+
+```sh
+chomd +x launch.sh
+launch.sh
+```
+
 [MediaPipe](https://github.com/google/mediapipe)のPythonパッケージのサンプルです。<br>
 2021/12/14時点でPython実装のある以下7機能について用意しています。
 * [Hands](https://google.github.io/mediapipe/solutions/hands)<br>

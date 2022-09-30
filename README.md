@@ -4,7 +4,7 @@
 
 ```sh
 chomd +x launch.sh
-launch.sh
+./launch.sh
 ```
 
 [MediaPipe](https://github.com/google/mediapipe)のPythonパッケージのサンプルです。<br>

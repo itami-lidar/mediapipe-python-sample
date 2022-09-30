@@ -1,0 +1,1 @@
+python sample_holistic.py --plot_world_landmark

@@ -1,4 +1,4 @@
-# mediapipe-python-sample
+# mediapipe-python-sample-from-video
 
 **ルートディレクトリに`senpai.mp4`を置くことで、その動画内の人の３次元姿勢推定できます**
 
